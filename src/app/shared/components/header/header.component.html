@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="closeMenu()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>My App</span>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="options">
+            <button mat-icon-button>
+                <mat-icon>settings</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon>help_outline</mat-icon>
+            </button>
+            <button mat-button [matMenuTriggerFor]="menu">
+                <mat-icon>person_outline</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Profile</button>
+            </mat-menu>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
