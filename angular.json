@@ -126,7 +126,11 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "/dashboard/",
+            "name": "Dashboard Template",
+            "email": "gudielcobon@gmail.com"
+          }
         }
       }
     }
